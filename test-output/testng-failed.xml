@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Daraz Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Testing Daraz Web Application using Chrome(failed)">
+    <parameter name="itemName" value="gents watches"/>
+    <parameter name="password" value="sK@1996"/>
+    <parameter name="minPrice" value="5000"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="maxPrice" value="10000"/>
+    <parameter name="url" value="https://www.daraz.lk/"/>
+    <parameter name="email" value="sk96@gmail.com"/>
+    <classes>
+      <class name="co.daraz.Daraz">
+        <methods>
+          <include name="selectWatchSpecs" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="buyItem" invocation-numbers="0"/>
+          <include name="setUpBrowser"/>
+        </methods>
+      </class> <!-- co.daraz.Daraz -->
+    </classes>
+  </test> <!-- Testing Daraz Web Application using Chrome(failed) -->
+  <test thread-count="5" name="Testing Daraz Web Application using Edge(failed)">
+    <parameter name="itemName" value="gents watches"/>
+    <parameter name="password" value="sK@1996"/>
+    <parameter name="minPrice" value="5000"/>
+    <parameter name="browserName" value="edge"/>
+    <parameter name="maxPrice" value="10000"/>
+    <parameter name="url" value="https://www.daraz.lk/"/>
+    <parameter name="email" value="sk96@gmail.com"/>
+    <classes>
+      <class name="co.daraz.Daraz">
+        <methods>
+          <include name="selectWatchSpecs" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="buyItem" invocation-numbers="0"/>
+          <include name="setUpBrowser"/>
+        </methods>
+      </class> <!-- co.daraz.Daraz -->
+    </classes>
+  </test> <!-- Testing Daraz Web Application using Edge(failed) -->
+</suite> <!-- Failed suite [Daraz Test Suite] -->

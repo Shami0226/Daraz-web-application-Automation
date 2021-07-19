@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Daraz Test Suite">
+  <test thread-count="5" name="Testing Daraz Web Application using Chrome">
+  
+  <parameter name="browserName" value="chrome"></parameter>
+  <parameter name="itemName" value="gents watches"></parameter>
+  <parameter name="url" value="https://www.daraz.lk/"></parameter>
+  <parameter name="minPrice" value="5000"></parameter>
+  <parameter name="maxPrice" value="10000"></parameter>
+  <parameter name="email" value="sk96@gmail.com"></parameter>
+  <parameter name="password" value="sK@1996"></parameter>
+    <classes>
+      <class name="co.daraz.Daraz"/>
+    </classes>
+  </test>
+  
+  
+   <test thread-count="5" name="Testing Daraz Web Application using Edge">
+  
+  <parameter name="browserName" value="edge"></parameter>
+  <parameter name="itemName" value="gents watches"></parameter>
+  <parameter name="url" value="https://www.daraz.lk/"></parameter>
+  <parameter name="minPrice" value="5000"></parameter>
+  <parameter name="maxPrice" value="10000"></parameter>
+  <parameter name="email" value="sk96@gmail.com"></parameter>
+  <parameter name="password" value="sK@1996"></parameter>
+    <classes>
+      <class name="co.daraz.Daraz"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
