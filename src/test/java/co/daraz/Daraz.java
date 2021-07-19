@@ -109,15 +109,12 @@ public class Daraz {
 		driver.findElement(By.xpath("//button[@class='add-to-cart-buy-now-btn  pdp-button pdp-button_type_text pdp-button_theme_bluedaraz pdp-button_size_xl']")).click();
 		System.out.println("\"Buy Now Pressed\"");
 		
-		/*
-		 * driver.findElement(By.
-		 * xpath("//input[@placeholder='Please enter your Phone Number or Email']")).
-		 * sendKeys(email); System.out.println("email provided");
-		 * 
-		 * driver.findElement(By.
-		 * xpath("//input[@placeholder='Please enter your password']")).sendKeys(
-		 * password); System.out.println("password provided");
-		 */
+		
+		driver.findElement(By.xpath("//input[@placeholder='Please enter your Phone Number or Email']")).sendKeys(email); 
+		System.out.println("email provided");
+		driver.findElement(By.xpath("//input[@placeholder='Please enter your password']")).sendKeys(password); 
+		System.out.println("password provided");
+	
 	}
 
 	@AfterTest
